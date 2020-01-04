@@ -14,6 +14,10 @@
 		46F23F3423C061710008299C /* RateApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46F23F3223C061710008299C /* RateApp.xcdatamodeld */; };
 		46F23F3623C061720008299C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F23F3523C061720008299C /* Assets.xcassets */; };
 		46F23F3923C061720008299C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F23F3723C061720008299C /* LaunchScreen.storyboard */; };
+		46F23F4123C062900008299C /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F23F4023C062900008299C /* RateViewController.swift */; };
+		46F23F4323C062A50008299C /* OverallRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F23F4223C062A50008299C /* OverallRateViewController.swift */; };
+		46F23F4623C073A00008299C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F23F4423C073A00008299C /* TableViewCell.swift */; };
+		46F23F4723C073A00008299C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F23F4523C073A00008299C /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		46F23F3523C061720008299C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46F23F3823C061720008299C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46F23F3A23C061720008299C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F23F4023C062900008299C /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		46F23F4223C062A50008299C /* OverallRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallRateViewController.swift; sourceTree = "<group>"; };
+		46F23F4423C073A00008299C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		46F23F4523C073A00008299C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,10 @@
 		46F23F2823C061710008299C /* RateApp */ = {
 			isa = PBXGroup;
 			children = (
+				46F23F4923C07B5F0008299C /* CustomView */,
+				46F23F4823C07B420008299C /* ViewController */,
 				46F23F2923C061710008299C /* AppDelegate.swift */,
 				46F23F2B23C061710008299C /* SceneDelegate.swift */,
-				46F23F2D23C061710008299C /* ViewController.swift */,
 				46F23F2F23C061710008299C /* Main.storyboard */,
 				46F23F3523C061720008299C /* Assets.xcassets */,
 				46F23F3723C061720008299C /* LaunchScreen.storyboard */,
@@ -68,6 +77,25 @@
 				46F23F3223C061710008299C /* RateApp.xcdatamodeld */,
 			);
 			path = RateApp;
+			sourceTree = "<group>";
+		};
+		46F23F4823C07B420008299C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46F23F4223C062A50008299C /* OverallRateViewController.swift */,
+				46F23F4023C062900008299C /* RateViewController.swift */,
+				46F23F2D23C061710008299C /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		46F23F4923C07B5F0008299C /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				46F23F4423C073A00008299C /* TableViewCell.swift */,
+				46F23F4523C073A00008299C /* TableViewCell.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F23F3923C061720008299C /* LaunchScreen.storyboard in Resources */,
+				46F23F4723C073A00008299C /* TableViewCell.xib in Resources */,
 				46F23F3623C061720008299C /* Assets.xcassets in Resources */,
 				46F23F3123C061710008299C /* Main.storyboard in Resources */,
 			);
@@ -143,7 +172,10 @@
 			files = (
 				46F23F2E23C061710008299C /* ViewController.swift in Sources */,
 				46F23F3423C061710008299C /* RateApp.xcdatamodeld in Sources */,
+				46F23F4323C062A50008299C /* OverallRateViewController.swift in Sources */,
 				46F23F2A23C061710008299C /* AppDelegate.swift in Sources */,
+				46F23F4123C062900008299C /* RateViewController.swift in Sources */,
+				46F23F4623C073A00008299C /* TableViewCell.swift in Sources */,
 				46F23F2C23C061710008299C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
